@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
         img.style.left = left + 'px';
         img.style.top = top + 'px';
         img.style.pointerEvents = 'auto';
-        img.style.opacity = '1.0';
+        img.style.opacity = '0.0';
         img.style.cursor = 'pointer';
         img.style.transition = 'transform 450ms cubic-bezier(.2,.9,.2,1), opacity 300ms ease';
         img.style.transformOrigin = 'center center';
@@ -239,4 +239,5 @@ window.addEventListener('beforeunload', function () {
     // not: beforeunload içinde gtag her zaman iletilmeyebilir
     gtag('event', 'time_on_page', { time_on_page_ms: timeOnPage });
   }
+
 });
