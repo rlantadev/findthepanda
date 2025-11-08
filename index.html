@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the invisivle panda with your mouse.">
+    <meta name="author" content="H. Dağhan Saydam">
+    <title>Find the Panda Game!</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/panda.ico" type="image/x-icon">
+
+    <!-- Harici CSS dosyası -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font örneği -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+
+      <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4L16XSLE6Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4L16XSLE6Y'); // G- ile başlayan Measurement ID'inizi buraya koyun
+  </script>
+
+</head>
+
+<body>
+    <h1 class="sign">Developed By H.Dağhan SAYDAM</h1>
+    <img src="assets/backgroundpanda.gif" alt="Background Panda" class="bg-gif">
+
+    <div class="start-screen">
+    <div class="box">
+        <h1>Find The Panda!</h1>
+        <p>To start the game, move your cursor close to the hidden panda and the sound will get louder. You must click where the panda is!</p>
+        <img src="assets/panda.png" alt="Panda" class="panda-img">
+        <button class="start-btn">Start The Game!</button>
+    </div>
+    </div>
+
+    <div class="game-screen" aria-hidden="true" style="display:none;">
+    <div class="game-content"></div>
+
+    <button class="back-btn" aria-label="Go Back">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>

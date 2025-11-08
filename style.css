@@ -1,0 +1,125 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* Yatayda ortala */
+  align-items: center;     /* Dikeyde ortala */
+  background-color: #ffffff;
+}
+
+.start-screen {
+    display: block;
+}
+
+.game-scren {
+    position: fixed;
+    inset: 0;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: opacity 200ms ease;
+    opacity: 1;
+}
+
+.game-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.game-content {
+  width: 90%;
+  max-width: 1200px;
+  height: 90%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.back-btn:hover {transform: translateY(-2px); background-color: #e50000;}
+
+.box {
+    width: min(600px, 90vw);
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Stack Sans Text", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.204) 0px 0px 20px 3px;
+}
+
+h1 {
+    padding-top: 10px;
+    margin: 0;
+}
+
+p {
+  padding-top: 20px;
+  margin: 0;           
+  padding-left: 20px;  
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;    
+}
+
+.panda-img {
+    width: 150px;
+    height: auto;
+    margin: 20px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sign {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 12px;
+    color: #555555;
+    opacity: 0.6;
+}
+
+button {
+  margin-top: 50px;   
+  width: 150px;             
+  height: 40px;             
+  border: none;             
+  border-radius: 5px;      
+  font-weight: 600; 
+  background-color: #188500; 
+  color: #e1e1e1;
+  font-size: 14px;          
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.start-btn:hover { transform: translateY(-2px); background-color: #1fa600; }
