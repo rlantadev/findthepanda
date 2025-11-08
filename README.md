@@ -10,7 +10,7 @@ Features
 - Simple, dependency-free HTML/CSS/JS
 
 How to run
-1. Open `index.html` in a modern browser (or host with GitHub Pages).
+1. Open the [preview site!](https://rlantadev.github.io/findthepanda)
 2. Click "Start The Game!" and move the mouse to locate the hidden panda.
 
 License
